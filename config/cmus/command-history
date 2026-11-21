@@ -1,0 +1,30 @@
+add /home/kometa/Lunatik/Playlist/
+pl-delete Default
+pl-create Main
+pl-delete Main
+pl
+add /home/kometa/Kometaaa/03_Плейлист/
+pl-delete "Main"
+qa
+add 03_Плейлист/
+add 03_Плейлист/*
+q
+pl-create "Main"
+pl-delete "Main playlist"
+clear
+3
+add Kometaaa/
+live-filter
+l
+player-pause
+pl-delete "Trash"
+pl-delete Trash
+add Kometaaa/02_Архів/Сміття/twitch mellstroy ｜ Мама птица щас в беде... [7691793632256429330].mp4
+add Kometaaa/02_Архів/Сміття/
+pl-create "Trash"
+add Kometaaa/03_Плейлист/
+quit
+pl-create "Main playlist"
+pl-rename Main
+colorscheme gruvbox-warm
+colorscheme gruvbox

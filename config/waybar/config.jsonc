@@ -1,0 +1,103 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "margin-top": 5,
+    "margin-left": 5,
+    "margin-right": 5,
+    "spacing": 0,
+
+    "modules-left": [
+        "custom/logo",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "tray",
+        "custom/sep",
+        "battery",
+        "custom/sep",
+        "pulseaudio",
+        "custom/sep",
+        "hyprland/language",
+        "custom/sep",
+        "clock#date",
+        "custom/sep",
+        "clock#time"
+    ],
+
+    "custom/logo": {
+        "format": " 󰣇 ",
+        "tooltip": false 
+    },
+
+    "custom/sep": {
+        "format": "|",
+        "tooltip": false
+    },
+
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 45,
+        "separate-outputs": true
+    },
+
+"hyprland/workspaces": {
+    "format": "{name}",
+    "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e+1\" })'",
+    "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e-1\" })'",
+    "all-outputs": true,
+    "persistent-workspaces": {
+        "*": 9
+    }
+},
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 16
+    },
+
+    "battery": {
+        "bat": "BAT0",
+        "adapter": "ADP1",
+        "interval": 5,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "<span color='#fabd2f'>{icon}</span> {capacity}%",
+        "format-charging": "<span color='#fe8019'> 󰂉 </span> {capacity}%",
+        "format-plugged": "<span color='#fe8019'>  </span> {capacity}%",
+        "format-full": "<span color='#fabd2f'> 󰁹 </span> {capacity}%",
+        "format-icons": [" 󰂎 ", " 󰁺 ", " 󰁻 ", " 󰁼", " 󰁽 ", " 󰁾 ", " 󰁿 ", " 󰂀 ", " 󰂁 ", " 󰂂 ", " 󰁹 "]
+    },
+
+    "pulseaudio": {
+        "format": "<span color='#fe8019'>{icon}</span> {volume}%",
+        "format-muted": " 󰝟  muted",
+        "format-icons": {
+            "default": [" 󰕿 ", " 󰖀 ", " 󰕾 "]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "scroll-step": 5
+    },
+
+    "hyprland/language": {
+        "format": "  {}",
+        "format-en": "us",
+        "format-uk": "ua"
+    },
+
+    "clock#date": {
+        "interval": 60,
+        "format": "  {:%Y-%m-%d}",
+        "tooltip-format": "<tt>{calendar}</tt>"
+    },
+
+    "clock#time": {
+        "interval": 1,
+        "format": "  {:%H:%M:%S}"
+    }
+}
