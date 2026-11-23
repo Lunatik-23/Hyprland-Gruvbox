@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Filen
-Exec=/home/lunatik/.local/bin/filen.AppImage
-Icon=/home/lunatik/.local/share/icons/filen.png
-Terminal=false
-Categories=Utility;
