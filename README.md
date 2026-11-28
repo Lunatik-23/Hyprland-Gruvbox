@@ -1,6 +1,10 @@
 # Hyprland-Gruvbox
 Just my hyprland rice
 
+![Screenshot](https://github.com/Lunatik-23/Hyprland-Gruvbox/blob/main/screenshoots/1.png)
+![Screenshot](https://github.com/Lunatik-23/Hyprland-Gruvbox/blob/main/screenshoots/2.png)
+![Screenshot](https://github.com/Lunatik-23/Hyprland-Gruvbox/blob/main/screenshoots/3.png)
+![Screenshot](https://github.com/Lunatik-23/Hyprland-Gruvbox/blob/main/screenshoots/4.png)
 Keybinds:
 ## ALT - mod key
 
