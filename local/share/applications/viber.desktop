@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Viber
-Exec=/home/lunatik/.local/bin/viber.AppImage
-Icon=/home/lunatik/.local/share/icons/viber.png
-Terminal=false
-Categories=Utility;
