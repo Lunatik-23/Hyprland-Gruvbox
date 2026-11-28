@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=VScodium
+Exec=/home/lunatik/.local/bin/vscodium/codium
+Icon=/home/lunatik/.local/share/icons/codium.png
+Terminal=false
+Categories=Utility;
